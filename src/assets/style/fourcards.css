@@ -1,0 +1,26 @@
+.txtcard{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 0;
+}
+
+.txtclr h5:hover{
+    color: green;
+}
+
+.txtclr h5{
+    font-size: 22px;
+}
+.txtclr p{
+    font-size: 18px;
+}
+
+.icondsply{
+    display: flex;
+    gap: 20px;
+}
+
+
+.icondsply svg:hover{
+    color: green;
+}

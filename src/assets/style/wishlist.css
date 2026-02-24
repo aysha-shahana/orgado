@@ -1,0 +1,35 @@
+.tble-img{
+    width: 100px;
+    height: 100px;
+}
+
+.addtocart{
+    border: 1px solid green;
+    color:#42812f;
+    border-radius: 7px;
+    
+}
+
+.addtocart:hover{
+    background-color:  #42812f;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+table {
+  width: 60%;
+  margin: 30px auto;
+  border-collapse: collapse !important;
+  
+}
+
+table th,
+table td {
+  border: 1px solid #00000076 !important;
+  padding: 15px;
+}
+
+th {
+  background-color: #f5f5f5;
+}

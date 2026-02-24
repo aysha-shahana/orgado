@@ -1,0 +1,40 @@
+.logos{
+    margin-left: 580px;
+}
+
+.compfooter{
+    background-color:rgb(239, 238, 234);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.ftoptions{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+    font-weight: 600;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.lihover:hover{
+    color: green;
+}
+
+.fticons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    color: rgb(207, 207, 203);
+}
+
+
+
+.ftic{
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 30px;
+}

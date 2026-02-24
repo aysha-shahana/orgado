@@ -1,0 +1,52 @@
+.name{
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 201, 201);
+    background-color: white;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 350px;   
+}
+
+#loginbtn{
+    text-decoration: none;
+    color: white;
+}
+#loginbtn:hover{
+    color: #42812f;
+}  
+
+.rmbr-me {
+    margin-left: 350px;
+    margin-top: 20px;
+    }
+
+#loginbtn{
+    background: #42812f;
+    
+    width: 50%;
+    height: 50px;
+    margin-left: 350px;
+    margin-top: 25px;
+}
+#loginbtn:hover{
+    background-color: white;
+    border: 1px solid green;
+}
+
+.sgnuplink{
+    font-weight: bold;
+    color: rgb(41, 40, 40);
+}
+.sgnuplink:hover{
+    color: rgb(41, 40, 40);
+
+}
+
+#register{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

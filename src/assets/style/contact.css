@@ -1,0 +1,57 @@
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.call {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.nameph {
+  display: flex;
+  gap: 30px;
+  margin-top: -30px;
+}
+.sbmtbtn {
+  background-color: #42812f;
+  color: white;
+  width: 160px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.sbmtbtn:hover {
+  background-color: white;
+  color: green;
+  border: 1px outset green;
+  transition: 1s;
+}
+
+.icgrn {
+  color: green;
+}
+
+.mail {
+  width: 200px;
+}
+
+.get {
+  font-size: 50px;
+}
+
+.support {
+  border: 1px solid rgb(165, 157, 157);
+  padding: 10px;
+  width: 290px;
+  border-radius: 10px;
+  padding-left: 20px;
+}

@@ -1,0 +1,75 @@
+.allcards {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    height: 280px;
+
+}
+
+.cards h3 {
+    width: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+
+}
+
+.cards h5 {
+    width: 80px;
+}
+
+.cards p {
+    width: 210px;
+}
+
+.cards {
+    padding: 30px;
+}
+
+.shop-btn {
+    border-radius: 35px;
+    border: 1px solid #42812f;
+    width: 130px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+.shop-btn:hover {
+    background-color: #42812f;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+#chicken-img {
+    background-image: url('../img/chicken.webp');
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    width: 450px;
+    height: auto;
+}
+
+#veg-img {
+    background-image: url('../img/veg.webp');
+    background-repeat: no-repeat;
+    height: auto;
+    width: 450px;
+    border-radius: 8px;
+}
+
+#fruit-img {
+    background-image: url('../img/apple.webp');
+    background-repeat: no-repeat;
+    height: auto;
+    width: 450px;
+    border-radius: 8px;
+}
+
+@media(max-width:786px){
+    .allcards{
+      flex-direction: column;
+      
+    }
+    .cards{
+        margin: 30px 0;
+        
+    }
+}

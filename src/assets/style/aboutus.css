@@ -1,0 +1,42 @@
+.text{
+    font-size: 15px;
+}
+.abtacc{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.abtacc:hover{
+    color: rgb(48, 45, 45);
+    cursor: pointer;
+}
+.bg-clr{
+    background-color: #42812f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.slctdsply{
+    padding: 10px;
+    
+}
+
+ 
+.slct{
+    color:white;
+    background-color:#42812f;
+    border: none;
+    
+}
+.optn{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:768px){
+    .bg-clr{
+        display: none;
+    }
+}

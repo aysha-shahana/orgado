@@ -1,0 +1,162 @@
+.flash-container {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  background: #f5f5f5;
+}
+
+/* LEFT SIDE */
+.left-section {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flash-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #4caf50;
+}
+
+.flash-box {
+  height: 200px;
+  border-radius: 15px;
+  margin: 30px 20px 0px 80px;
+  position: relative;
+}
+
+.new-circle {
+  position: absolute;
+top: 3px;
+  right: 10px;
+  background: #4caf50;
+  color: white;
+  padding: 10px;
+  padding-top: 15px;
+  border-radius: 50%;
+  height: 55px;
+  font-weight: bold;
+}
+
+.price-sign{
+  font-size: 22px;
+  color: green;
+  padding-left: 60px;
+  margin-top: 20px;
+}
+
+.stock {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+}
+
+/* Promo card */
+.promo-card {
+  background: #f3d5b5;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  text-align: left;
+}
+
+.promo-card h3 {
+  margin: 5px 0;
+}
+
+.promo-card .price {
+  font-weight: bold;
+  color: #b85c38;
+}
+
+.hot-badge {
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  background: brown;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50px;
+}
+
+.promo-image {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* RIGHT SIDE */
+.right-section {
+  width: 75%;
+}
+
+.browse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs span {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tabs .active {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.product-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+.product-card h4 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.product-price {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.stars {
+  color: orange;
+  font-size: 14px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #4caf50;
+  color: white;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+}

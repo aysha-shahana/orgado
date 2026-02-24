@@ -1,0 +1,56 @@
+.allctgry{
+    width: 170px;
+    border-radius: 25px;
+    background-color: #42812f;
+    color: white;
+    margin-right: 60px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    border: none;
+}
+
+.a-view{
+    color: white;
+    text-decoration: none;
+}
+.a-view:hover{
+    color: white;
+}
+
+.browse{
+    margin-left: 60px;
+    margin-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.items{
+    color: gray;
+}
+.cardflex{
+    display: flex;
+}
+
+.ctgryimg{
+    gap:"10px";
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin-left: 60px;
+    margin-bottom: 50px;
+    height: 290px;
+    width: 270px;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.ctgryimg h4{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+
+@media(max-width:786px){
+    .cardflex{
+        flex-direction: column;
+    }
+}
