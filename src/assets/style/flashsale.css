@@ -29,7 +29,7 @@
 
 .new-circle {
   position: absolute;
-top: 3px;
+  top: 3px;
   right: 10px;
   background: #4caf50;
   color: white;
@@ -159,4 +159,35 @@ top: 3px;
   padding: 3px 8px;
   font-size: 12px;
   border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .flash-container {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    .browse-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .flash-box {
+        margin: 30px auto 0;
+    }
 }

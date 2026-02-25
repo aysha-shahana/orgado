@@ -15,7 +15,7 @@ function Productlist() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    responsive: [
+   responsive: [
       {
         breakpoint: 1024,
         settings: {
@@ -26,6 +26,13 @@ function Productlist() {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
         },
       },
     ],
@@ -68,7 +75,7 @@ function Productlist() {
         <Slider ref={sliderRef} {...settings}>
           {products.map((product) => (
             <div className="main-products" key={product.id}>
-              <span className="badge">new</span>
+              {/* <span className="badge">new</span> */}
 
               <div className="image-wrapper">
                 <img

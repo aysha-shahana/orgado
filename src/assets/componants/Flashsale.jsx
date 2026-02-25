@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../style/flashsale.css"
-import { products } from '../../data/productlist'
+import { products } from '../../data/productlist';
+import { FaEye, FaHeart, FaShoppingCart } from 'react-icons/fa';
+
+
+const firstRow = products.slice(0, 3);
+const secondRow = products.slice(3, 5);
 function Flashsale() {
+   const [selectedProduct, setSelectedProduct] = useState(null);
   return (
 
      <div className="flash-container">
@@ -14,8 +20,6 @@ function Flashsale() {
              <img src="populer-thumb.webp" alt="populer-thumb" />
             <div className="new-circle">NEW</div>
             <h5 className='price-sign'> $ </h5>
-  
-           
             <p className="stock">Available : Stock</p>
           </div>
         </div>
@@ -44,19 +48,54 @@ function Flashsale() {
             <span>Trending</span>
           </div>
         </div>
+        <div className="dsss">
+                    {firstRow.map((product) => (
+                      <div className="main-products" key={product.id}>
+                        {/* <span className="badge">new</span> */}
+                        <div className="image-wrapper">
+                          <img src={product.image} alt={product.name} className="watch-img" />
+                          <div className="hover-icons">
+                            <div className="icon-circle"><FaShoppingCart /></div>
+                            <div className="icon-circle"><FaEye onClick={() => setSelectedProduct(product)} /></div>
+                            <div className="icon-circle"><FaHeart /></div>
+                          </div>
+                        </div>
+                        <h5>{product.name}</h5>
+                        <h6>{product.price}</h6>
+                        <div className="stars">★★★★★</div>
+                      </div>
+                    ))}
+                  </div>
+        
+                  <div className="dsss">
+                    {secondRow.map((product) => (
+                      <div className="main-products" key={product.id}>
+                        {/* <span className="badge">new</span> */}
+                        <div className="image-wrapper">
+                          <img src={product.image} alt={product.name} className="watch-img" />
+                          <div className="hover-icons">
+                            <div className="icon-circle"><FaShoppingCart /></div>
+                            <div className="icon-circle"><FaEye onClick={() => setSelectedProduct(product)} /></div>
+                            <div className="icon-circle"><FaHeart /></div>
+                          </div>
+                        </div>
+                        <h5>{product.name}</h5>
+                        <h6>{product.price}</h6>
+                        <div className="stars">★★★★★</div>
+                      </div>
+                    ))}
+                  </div>
 
-        <div className="product-grid">
-          {products.map((item) => (
-            <div className="product-card" key={item.id}>
-              {item.isNew && <span className="badge">new</span>}
-              <img src={item.image} alt={item.title} />
-              <h4>{item.title}</h4>
-              <p className="product-price">${item.price}</p>
-              <div className="stars">★★★★★</div>
-            </div>
-          ))}
-        </div>
+        
       </div>
+
+        {/* ✅ MODAL OUTSIDE SLIDER */}
+      {selectedProduct && (
+        <ProductModal
+          product={selectedProduct}
+          closeModal={() => setSelectedProduct(null)}
+        />
+      )}
     </div>
   );
 };

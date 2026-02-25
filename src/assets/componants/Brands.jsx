@@ -7,7 +7,9 @@ import brand4 from "../img/brand 4.webp";
 import brand5 from "../img/brand 5.webp";
 import brand6 from "../img/brand 6.webp";
 import Slider from 'react-slick';
- 
+
+// 2223uhjebdjad
+
 function Brands(){
 const settings={
 
@@ -19,7 +21,7 @@ const settings={
     autoplaySpeed: 0,
     cssEase: "linear"
 };
- 
+
   return (
     <div className=' brand' >
       <Slider {...settings}>

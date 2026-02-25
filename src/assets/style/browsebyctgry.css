@@ -49,8 +49,31 @@
     padding-left: 10px;
 }
 
+@media(max-width:1024px){
+    .cardflex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ctgryimg {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 @media(max-width:786px){
     .cardflex{
         flex-direction: column;
+        align-items: center;
+    }
+    .browse {
+        margin-left: 0;
+        text-align: center;
+    }
+    .allctgry {
+        margin: 20px auto;
+        display: block;
+    }
+    .ctgryimg {
+        margin-left: 0;
     }
 }
